@@ -2,8 +2,6 @@
 using System;
 using System.Windows.Forms;
 using DAO;
-using MercuryProject.Properties;
-using System.Reflection.Emit;
 
 namespace MercuryProject.Forms
 {
@@ -99,24 +97,6 @@ namespace MercuryProject.Forms
             txtBoxCor.Texts = "";
             txtBoxPlaca.Texts = "";
             txtBoxFabricante.Texts = "";
-        }
-
-        private void FormVeiculos_Load(object sender, EventArgs e)
-        {
-            if (Program.isDark)
-            {
-                label1.ForeColor = Program.darkColors["BaseText"];
-                lbl.ForeColor = Program.darkColors["BaseText"];
-                this.BackColor = Program.darkColors["BackContent"];
-                pictureBox3.Image = Resources.Linha_Divisoo_escuro;
-            }
-            else
-            {
-                label1.ForeColor = Program.lightColors["BaseText"];
-                lbl.ForeColor = Program.lightColors["BaseText"];
-                this.BackColor = Program.lightColors["BackContent"];
-                pictureBox3.Image = Resources.Linha_Divisoo;
-            }
         }
     }
 }
