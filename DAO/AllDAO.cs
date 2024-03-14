@@ -90,15 +90,15 @@ namespace DAO
         {
             db.Open();
 
-            string Insert = $"UPDATE TblUser SET NomeUser = '{cliente.nm_cliente}', CargoUser = '{cliente.nm_cidade}', DataNascUser = STR_TO_DATE('{cliente.dt_nascimento}', '%d/%m/%Y %T') WHERE IdUser = {cliente.cd_cliente};";
-            db.ExecuteNonScalarMySql(Insert);
+            string Update = $"CALL UpdateCliente({cliente.cd_cliente}, {cliente.nm_cliente}, {cliente.no_CPF}, {cliente.email}, {cliente.no_telefone}, {cliente.dt_nascimento}, {cliente.nm_logradouro}, {cliente.no_logradouro}, {cliente.nm_cidade}, {cliente.nm_bairro}, {cliente.no_CEP}, {cliente.sg_UF});";
+            db.ExecuteNonScalarMySql(Update);
 
             db.Close();
         }
-        public void Delete_Cliente(Cliente cliente)
+        public void Delete_Cliente(int id)
         {
             db.Open();
-            string Delete = $"DELETE FROM TblUser WHERE IdUser = {cliente.cd_cliente};";
+            string Delete = $"DELETE FROM TblCliente WHERE cd_cliente = {id};";
             db.ExecuteNonScalarMySql(Delete);
 
             db.Close();
@@ -121,6 +121,15 @@ namespace DAO
                 $"INSERT INTO TblFuncionario(cd_login, nm_funcionario, no_CPF, email, no_telefone, nm_logradouro, no_logradouro, nm_cidade, nm_bairro, no_CEP, sg_UF)" +
                 $"VALUES({funcionario.cd_login}, '{funcionario.nm_funcinario}', '{funcionario.no_CPF}', '{funcionario.email}', '{funcionario.no_telefone}', '{funcionario.nm_logradouro}', '{funcionario.no_logradouro}', '{funcionario.nm_cidade}', '{funcionario.nm_bairro}', '{funcionario.no_CEP}', '{funcionario.sg_UF}');";
             db.ExecuteNonScalarMySql(Insert);
+        }
+
+        public void Delete_Funcionario(int id)
+        {
+            db.Open();
+            string Delete = $"DELETE FROM TblFuncionario WHERE cd_funcionario = {id};";
+            db.ExecuteNonScalarMySql(Delete);
+
+            db.Close();
         }
 
         /*VEICULO*/
@@ -147,6 +156,15 @@ namespace DAO
             bool res = int.Parse(db.ExecuteScalarMySql(Select)) > 0;
             db.Close();
             return res;
+        }
+
+        public void Delete_Veiculo(int id)
+        {
+            db.Open();
+            string Delete = $"DELETE FROM TblVeiculos WHERE cd_veiculo = {id};";
+            db.ExecuteNonScalarMySql(Delete);
+
+            db.Close();
         }
     }
 }
