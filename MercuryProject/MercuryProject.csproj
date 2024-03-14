@@ -216,35 +216,35 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Audi.png" />
-    <Content Include="Resources\Audi_claro.png" />
-    <Content Include="Resources\BMW.png" />
-    <Content Include="Resources\BMW_claro.png" />
-    <Content Include="Resources\Bugatti.png" />
-    <Content Include="Resources\Bugatti_claro.png" />
     <Content Include="Resources\CarroBarraLoading.png" />
-    <Content Include="Resources\Ferrari.png" />
-    <Content Include="Resources\Ferrari_claro.png" />
-    <Content Include="Resources\hide.png" />
-    <Content Include="Resources\Jaguar.png" />
-    <Content Include="Resources\Jaguar_claro.png" />
-    <Content Include="Resources\Lambo.png" />
-    <Content Include="Resources\Lambo_claro.png" />
-    <Content Include="Resources\Linha_Divisoo.png" />
-    <None Include="Resources\Linha_Divisoo_escuro.png" />
-    <Content Include="Resources\Linha_vermelha.png" />
-    <Content Include="Resources\LogoCliente.png" />
-    <Content Include="Resources\LogoClienteEscuro.png" />
-    <Content Include="Resources\lua_clara.png" />
-    <Content Include="Resources\lua_escura.png" />
-    <Content Include="Resources\Mercedez.png" />
-    <Content Include="Resources\Mercedez_claro.png" />
-    <Content Include="Resources\Porsche.png" />
-    <Content Include="Resources\Porsche_claro.png" />
-    <Content Include="Resources\show.png" />
-    <Content Include="Resources\sol_claro.png" />
-    <Content Include="Resources\sol_escuro.png" />
-    <Content Include="Resources\visible.png" />
+    <None Include="Resources\Inicio\Porsche_claro.png" />
+    <None Include="Resources\Inicio\Porsche.png" />
+    <None Include="Resources\Inicio\Mercedez_claro.png" />
+    <None Include="Resources\Inicio\Mercedez.png" />
+    <None Include="Resources\Inicio\Lambo_claro.png" />
+    <None Include="Resources\Inicio\Lambo.png" />
+    <None Include="Resources\Inicio\Jaguar_claro.png" />
+    <None Include="Resources\Inicio\Jaguar.png" />
+    <None Include="Resources\Inicio\Ferrari_claro.png" />
+    <None Include="Resources\Inicio\Ferrari.png" />
+    <None Include="Resources\Inicio\Bugatti_claro.png" />
+    <None Include="Resources\Inicio\Bugatti.png" />
+    <None Include="Resources\Inicio\BMW_claro.png" />
+    <None Include="Resources\Inicio\BMW.png" />
+    <None Include="Resources\Inicio\Audi_claro.png" />
+    <None Include="Resources\Inicio\Audi.png" />
+    <None Include="Resources\Icones\visible.png" />
+    <None Include="Resources\Icones\sol_escuro.png" />
+    <None Include="Resources\Icones\sol_claro.png" />
+    <None Include="Resources\Icones\show.png" />
+    <None Include="Resources\Icones\lua_escura.png" />
+    <None Include="Resources\Icones\lua_clara.png" />
+    <None Include="Resources\Icones\hide.png" />
+    <None Include="Resources\Geral\LogoClienteEscuro.png" />
+    <None Include="Resources\Geral\LogoCliente.png" />
+    <None Include="Resources\Geral\Linha_vermelha.png" />
+    <None Include="Resources\Geral\Linha_Divisoo_escuro.png" />
+    <None Include="Resources\Geral\Linha_Divisoo.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
@@ -258,5 +258,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

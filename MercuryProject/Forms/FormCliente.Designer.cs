@@ -86,7 +86,6 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::MercuryProject.Properties.Resources.Linha_Divisoo;
             this.pictureBox3.Location = new System.Drawing.Point(79, 317);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox3.Name = "pictureBox3";
@@ -97,7 +96,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::MercuryProject.Properties.Resources.Linha_vermelha;
             this.pictureBox2.Location = new System.Drawing.Point(12, 46);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(180, 7);
@@ -107,7 +105,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::MercuryProject.Properties.Resources.Linha_vermelha;
             this.pictureBox1.Location = new System.Drawing.Point(703, 46);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(180, 7);

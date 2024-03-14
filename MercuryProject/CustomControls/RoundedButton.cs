@@ -99,10 +99,5 @@ namespace MercuryProject.CustomControls
         {
             if (borderRadius > this.Height) borderRadius = this.Height;
         }
-
-        internal void Click()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
