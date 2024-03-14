@@ -24,5 +24,18 @@ namespace MercuryProject.Forms
             }
             dgvDados.DataSource = DAO.Select_Data_Table(arrayTables[indexComboBox]);
         }
+
+        private void FormConsulta_Load(object sender, EventArgs e)
+        {
+            if(Program.isDark) {
+                label1.ForeColor = Program.darkColors["BaseText"];
+                this.BackColor = Program.darkColors["BackContent"];
+                dgvDados.BackgroundColor = Program.darkColors["BackMenu"];
+            } else {
+                label1.ForeColor = Program.lightColors["BaseText"];
+                this.BackColor = Program.lightColors["BackContent"];
+                dgvDados.BackgroundColor = Program.lightColors["BackMenu"];
+            }
+        }
     }
 }

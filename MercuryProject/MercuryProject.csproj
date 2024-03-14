@@ -217,21 +217,30 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Audi.png" />
+    <Content Include="Resources\Audi_claro.png" />
     <Content Include="Resources\BMW.png" />
+    <Content Include="Resources\BMW_claro.png" />
     <Content Include="Resources\Bugatti.png" />
+    <Content Include="Resources\Bugatti_claro.png" />
     <Content Include="Resources\CarroBarraLoading.png" />
     <Content Include="Resources\Ferrari.png" />
+    <Content Include="Resources\Ferrari_claro.png" />
     <Content Include="Resources\hide.png" />
     <Content Include="Resources\Jaguar.png" />
+    <Content Include="Resources\Jaguar_claro.png" />
     <Content Include="Resources\Lambo.png" />
+    <Content Include="Resources\Lambo_claro.png" />
     <Content Include="Resources\Linha_Divisoo.png" />
+    <None Include="Resources\Linha_Divisoo_escuro.png" />
     <Content Include="Resources\Linha_vermelha.png" />
     <Content Include="Resources\LogoCliente.png" />
     <Content Include="Resources\LogoClienteEscuro.png" />
     <Content Include="Resources\lua_clara.png" />
     <Content Include="Resources\lua_escura.png" />
     <Content Include="Resources\Mercedez.png" />
+    <Content Include="Resources\Mercedez_claro.png" />
     <Content Include="Resources\Porsche.png" />
+    <Content Include="Resources\Porsche_claro.png" />
     <Content Include="Resources\show.png" />
     <Content Include="Resources\sol_claro.png" />
     <Content Include="Resources\sol_escuro.png" />
