@@ -173,6 +173,36 @@ namespace MercuryProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LogoClienteEscuro {
+            get {
+                object obj = ResourceManager.GetObject("LogoClienteEscuro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lua_clara {
+            get {
+                object obj = ResourceManager.GetObject("lua_clara", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lua_escura {
+            get {
+                object obj = ResourceManager.GetObject("lua_escura", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Mercedez {
             get {
                 object obj = ResourceManager.GetObject("Mercedez", resourceCulture);
@@ -186,6 +216,26 @@ namespace MercuryProject.Properties {
         internal static System.Drawing.Bitmap Porsche {
             get {
                 object obj = ResourceManager.GetObject("Porsche", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sol_claro {
+            get {
+                object obj = ResourceManager.GetObject("sol_claro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sol_escuro {
+            get {
+                object obj = ResourceManager.GetObject("sol_escuro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

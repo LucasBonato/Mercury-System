@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MercuryProject.Properties;
+using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -9,11 +11,13 @@ namespace MercuryProject
     {
         Button btnAtual;
         Form formAtual;
+        List<Button> buttons = new List<Button>();
         public Menu()
         {
             InitializeComponent();
             btnInicio_Click(btnInicio, new EventArgs());
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            AddButtons();
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -74,7 +78,7 @@ namespace MercuryProject
             {
                 if (buttonAnterior.GetType() == typeof(Button))
                 {
-                    buttonAnterior.ForeColor = Color.Black;
+                    buttonAnterior.ForeColor = Program.isDark ? Color.White : Color.Black;
                 }
             }
         }
@@ -95,6 +99,56 @@ namespace MercuryProject
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        private void AddButtons()
+        {
+            buttons.Add(btnInicio);
+            buttons.Add(btnConsulta);
+            buttons.Add(btnFuncionario);
+            buttons.Add(btnCliente);
+            buttons.Add(btnVeículos);
+        }
+
+        private void ChangeMode(object sender, EventArgs e)
+        {
+            Program.isDark = (Program.isDark) ? false : true ;
+
+            if(Program.isDark){
+                DarkMode();
+            } else {
+                LightMode();
+            }
+        }
+
+        private void DarkMode()
+        {
+            picBoxLogo.Image = Resources.LogoClienteEscuro;
+            picBoxSun.Image = Resources.sol_claro;
+            picBoxMoon.Image = Resources.lua_clara;
+            contentPanel.BackColor = Program.darkColors["BackContent"];
+            menuPanel.BackColor = Program.darkColors["BackMenu"];
+            foreach (Button button in buttons)
+            {
+                button.ForeColor = Program.darkColors["BaseText"];
+                button.BackColor = Program.darkColors["BackMenu"];
+                button.FlatAppearance.MouseDownBackColor = Program.darkColors["BackContent"];
+                button.FlatAppearance.MouseOverBackColor = Program.darkColors["Vermelho"];
+            }
+        }
+        private void LightMode()
+        {
+            picBoxLogo.Image = Resources.LogoCliente;
+            picBoxSun.Image = Resources.sol_escuro;
+            picBoxMoon.Image = Resources.lua_escura;
+            contentPanel.BackColor = Program.lightColors["BackContent"];
+            menuPanel.BackColor = Program.lightColors["BackMenu"];
+            foreach (Button button in buttons)
+            {
+                button.ForeColor = Program.lightColors["BaseText"];
+                button.BackColor = Program.lightColors["BackMenu"];
+                button.FlatAppearance.MouseDownBackColor = Program.lightColors["MDBC"];
+                button.FlatAppearance.MouseOverBackColor = Program.lightColors["MOBC"];
+            }
         }
     }
 }

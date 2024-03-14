@@ -95,6 +95,9 @@
     <Compile Include="CustomControls\RoundedTextBox.Designer.cs">
       <DependentUpon>RoundedTextBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\ToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms\FormCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,9 +227,14 @@
     <Content Include="Resources\Linha_Divisoo.png" />
     <Content Include="Resources\Linha_vermelha.png" />
     <Content Include="Resources\LogoCliente.png" />
+    <Content Include="Resources\LogoClienteEscuro.png" />
+    <Content Include="Resources\lua_clara.png" />
+    <Content Include="Resources\lua_escura.png" />
     <Content Include="Resources\Mercedez.png" />
     <Content Include="Resources\Porsche.png" />
     <Content Include="Resources\show.png" />
+    <Content Include="Resources\sol_claro.png" />
+    <Content Include="Resources\sol_escuro.png" />
     <Content Include="Resources\visible.png" />
   </ItemGroup>
   <ItemGroup>
