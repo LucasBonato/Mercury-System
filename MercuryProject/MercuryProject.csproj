@@ -225,6 +225,7 @@
     <Content Include="Resources\Jaguar.png" />
     <Content Include="Resources\Lambo.png" />
     <Content Include="Resources\Linha_Divisoo.png" />
+    <None Include="Resources\Linha_Divisoo_escuro.png" />
     <Content Include="Resources\Linha_vermelha.png" />
     <Content Include="Resources\LogoCliente.png" />
     <Content Include="Resources\LogoClienteEscuro.png" />

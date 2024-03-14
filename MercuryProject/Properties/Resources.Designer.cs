@@ -153,6 +153,16 @@ namespace MercuryProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Linha_Divisoo_escuro {
+            get {
+                object obj = ResourceManager.GetObject("Linha_Divisoo_escuro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Linha_vermelha {
             get {
                 object obj = ResourceManager.GetObject("Linha_vermelha", resourceCulture);

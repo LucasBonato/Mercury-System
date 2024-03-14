@@ -1,4 +1,5 @@
 ﻿using DAO;
+using MercuryProject.Properties;
 using Models;
 using System;
 using System.Windows.Forms;
