@@ -10,8 +10,6 @@ namespace MercuryProject.Forms
     {
         AllDAO DAO = new AllDAO();
         private string[] arrayTables;
-        static int indexSelecionado = 0;
-        int indexComboBox;
         public FormConsulta()
         {
             InitializeComponent();
@@ -20,7 +18,7 @@ namespace MercuryProject.Forms
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            indexComboBox = comBoxModel.SelectedIndex;
+            int indexComboBox = comBoxModel.SelectedIndex;
             if (indexComboBox < 0)
             {
                 MessageBox.Show("Selecione um campo antes de fazer a consulta!", "Error: Campo não selecionado", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -28,6 +26,7 @@ namespace MercuryProject.Forms
             }
             dgvDados.DataSource = DAO.Select_Data_Table(arrayTables[indexComboBox]);
         }
+
         private void FormConsulta_Load(object sender, EventArgs e)
         {
             if(Program.isDark) {
@@ -40,10 +39,11 @@ namespace MercuryProject.Forms
                 dgvDados.BackgroundColor = Program.lightColors["BackMenu"];
             }
         }
+
         private void dgvDados_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             RoundedButton button = new RoundedButton();
-            button.Location = new Point(660, 102);
+            button.Location = new System.Drawing.Point(660, 102);
             button.Size = new Size(150, 30);
             button.BackColor = Program.darkColors["Vermelho"];
             button.ForeColor = Color.White;
@@ -53,25 +53,19 @@ namespace MercuryProject.Forms
             button.BorderRadius = 10;
             button.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button.Name = "btnDelete";
-            button.Click += new EventHandler(this.btnDelete_Click);
+            Button btn = new Button();
+            btn.Click += new EventHandler(this.btnDelete_Click);
             Controls.Add(button);
-            indexSelecionado = (int)dgvDados.Rows[e.RowIndex].Cells[0].Value;
         }
+
         private void btnDelete_Click(object sennder, EventArgs e)
         {
-            switch (indexComboBox)
-            {
-                case 0:
-                    DAO.Delete_Cliente(indexSelecionado);
-                    break;
-                case 1:
-                    DAO.Delete_Funcionario(indexSelecionado);
-                    break;
-                case 2:
-                    DAO.Delete_Veiculo(indexSelecionado);
-                    break;
-            }
-            dgvDados.DataSource = DAO.Select_Data_Table(arrayTables[indexComboBox]);
+
+        }
+
+        private void dgvDados_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            Console.WriteLine("2");
         }
     }
 }
