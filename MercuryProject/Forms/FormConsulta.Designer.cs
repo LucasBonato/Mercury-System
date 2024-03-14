@@ -84,6 +84,8 @@
             this.dgvDados.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvDados.Size = new System.Drawing.Size(871, 418);
             this.dgvDados.TabIndex = 8;
+            this.dgvDados.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvDados_RowHeaderMouseClick);
+            this.dgvDados.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvDados_RowHeaderMouseDoubleClick);
             // 
             // btnConsultar
             // 
@@ -103,7 +105,6 @@
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.TextColor = System.Drawing.Color.White;
             this.btnConsultar.UseVisualStyleBackColor = false;
-            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // comBoxModel
             // 
