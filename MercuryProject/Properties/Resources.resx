@@ -118,6 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+<<<<<<< HEAD
   <data name="LogoClienteEscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoClienteEscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -141,12 +142,16 @@
   </data>
   <data name="lua_escura" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lua_escura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+=======
+  <data name="Porsche_claro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Porsche_claro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+>>>>>>> parent of 6fb7953 ([BUILD] implementação de Delete no banco de Dados através das consultas.)
   </data>
   <data name="lua_clara" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lua_clara.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Bugatti" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bugatti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Bugatti_claro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bugatti_claro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hide" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,26 +159,80 @@
   <data name="Porsche" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Porsche.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Mercedez_claro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mercedez_claro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ferrari" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ferrari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BMW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BMW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+<<<<<<< HEAD
   <data name="visible" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\visible.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+=======
+>>>>>>> parent of 6fb7953 ([BUILD] implementação de Delete no banco de Dados através das consultas.)
   <data name="LogoCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoCliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CarroBarraLoading" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CarroBarraLoading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Audi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Audi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BMW_claro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BMW_claro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Jaguar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Jaguar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sol_claro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sol_claro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bugatti" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bugatti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sol_escuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sol_escuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lua_escura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lua_escura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ferrari_claro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ferrari_claro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Linha_vermelha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Linha_vermelha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sol_claro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sol_claro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CarroBarraLoading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CarroBarraLoading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mercedez" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mercedez.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jaguar_claro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Jaguar_claro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Linha_Divisoo_escuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Linha_Divisoo_escuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Audi_claro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Audi_claro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lambo_claro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lambo_claro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Linha_Divisoo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Linha_Divisoo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="visible" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\visible.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lambo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lambo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Linha_Divisoo_escuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Linha_Divisoo_escuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

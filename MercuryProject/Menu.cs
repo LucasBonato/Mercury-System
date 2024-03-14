@@ -1,7 +1,9 @@
-﻿using MercuryProject.Properties;
+﻿using MercuryProject.Forms;
+using MercuryProject.Properties;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -26,23 +28,23 @@ namespace MercuryProject
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            AbrirNovoPanel(new Forms.FormInicio(), sender);
+            AbrirNovoPanel(new FormInicio(), sender);
         }
         private void btnCliente_Click(object sender, EventArgs e)
         {
-            AbrirNovoPanel(new Forms.FormCliente(), sender);
+            AbrirNovoPanel(new FormCliente(), sender);
         }
         private void btnFuncionario_Click(object sender, EventArgs e)
         {
-            AbrirNovoPanel(new Forms.FormFuncionario(), sender);
+            AbrirNovoPanel(new FormFuncionario(), sender);
         }
         private void btnVeículos_Click(object sender, EventArgs e)
         {
-            AbrirNovoPanel(new Forms.FormVeiculos(), sender);
+            AbrirNovoPanel(new FormVeiculos(), sender);
         }
         private void btnConsulta_Click(object sender, EventArgs e)
         {
-            AbrirNovoPanel(new Forms.FormConsulta(), sender);
+            AbrirNovoPanel(new FormConsulta(), sender);
         }
         private void AbrirNovoPanel(Form novoForm, object sender)
         {
@@ -51,6 +53,21 @@ namespace MercuryProject
                 formAtual.Close();
             }
             ButtonAtivado(sender);
+            formAtual = novoForm;
+            novoForm.TopLevel = false;
+            novoForm.FormBorderStyle = FormBorderStyle.None;
+            novoForm.Dock = DockStyle.Fill;
+            this.contentPanel.Controls.Add(novoForm);
+            this.contentPanel.Tag = novoForm;
+            novoForm.BringToFront();
+            novoForm.Show();
+        }
+        private void AbrirNovoPanelWithoutSender(Form novoForm)
+        {
+            if (formAtual != null)
+            {
+                formAtual.Close();
+            }
             formAtual = novoForm;
             novoForm.TopLevel = false;
             novoForm.FormBorderStyle = FormBorderStyle.None;
@@ -118,8 +135,28 @@ namespace MercuryProject
             } else {
                 LightMode();
             }
-        }
+            Form formParaReiniciar = contentPanel.Controls.OfType<Form>().First();
 
+            switch (formParaReiniciar)
+            {
+                case FormInicio form:
+                    formParaReiniciar = new FormInicio();
+                    break;
+                case FormConsulta form:
+                    formParaReiniciar = new FormConsulta();
+                    break;
+                case FormCliente form:
+                    formParaReiniciar = new FormCliente();
+                    break;
+                case FormFuncionario form:
+                    formParaReiniciar = new FormFuncionario();
+                    break;
+                case FormVeiculos form:
+                    formParaReiniciar = new FormVeiculos();
+                    break;
+            }
+            AbrirNovoPanelWithoutSender(formParaReiniciar);
+        }
         private void DarkMode()
         {
             picBoxLogo.Image = Resources.LogoClienteEscuro;
@@ -129,10 +166,11 @@ namespace MercuryProject
             menuPanel.BackColor = Program.darkColors["BackMenu"];
             foreach (Button button in buttons)
             {
-                button.ForeColor = Program.darkColors["BaseText"];
                 button.BackColor = Program.darkColors["BackMenu"];
                 button.FlatAppearance.MouseDownBackColor = Program.darkColors["BackContent"];
                 button.FlatAppearance.MouseOverBackColor = Program.darkColors["Vermelho"];
+                if (button.ForeColor == Program.darkColors["Vermelho"]) continue;
+                button.ForeColor = Program.darkColors["BaseText"];
             }
         }
         private void LightMode()
@@ -144,10 +182,11 @@ namespace MercuryProject
             menuPanel.BackColor = Program.lightColors["BackMenu"];
             foreach (Button button in buttons)
             {
-                button.ForeColor = Program.lightColors["BaseText"];
                 button.BackColor = Program.lightColors["BackMenu"];
                 button.FlatAppearance.MouseDownBackColor = Program.lightColors["MDBC"];
                 button.FlatAppearance.MouseOverBackColor = Program.lightColors["MOBC"];
+                if (button.ForeColor == Program.lightColors["Vermelho"]) continue;
+                button.ForeColor = Program.lightColors["BaseText"];
             }
         }
     }

@@ -145,5 +145,22 @@ namespace MercuryProject.Forms
             txtBoxCidade.Texts = "";
             txtBoxBairro.Texts = "";
         }
+
+        private void FormCliente_Load(object sender, EventArgs e)
+        {
+            if (Program.isDark) {
+                label1.ForeColor = Program.darkColors["BaseText"];
+                lbl.ForeColor = Program.darkColors["BaseText"];
+                label2.ForeColor = Program.darkColors["BaseText"];
+                this.BackColor = Program.darkColors["BackContent"];
+                pictureBox3.Image = Resources.Linha_Divisoo_escuro;
+            } else {
+                label1.ForeColor = Program.lightColors["BaseText"];
+                lbl.ForeColor = Program.lightColors["BaseText"];
+                label2.ForeColor = Program.lightColors["BaseText"];
+                this.BackColor = Program.lightColors["BackContent"];
+                pictureBox3.Image = Resources.Linha_Divisoo;
+            }
+        }
     }
 }
