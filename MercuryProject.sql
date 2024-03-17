@@ -78,6 +78,15 @@ CREATE TABLE TblItens_compra (
 	FOREIGN KEY(cd_pagamento) REFERENCES TblPagamento (cd_pagamento)
 );
 
+DELIMITER $$
+CREATE PROCEDURE UpdateCliente(id int, nome varChar(40), cpf char(11), emailCli varChar(50), telefone char(11), nascimento datetime, nomeLogradouro varChar(60), Numlogradouro varChar(4), cidade varChar(30), bairro varChar(30), CEP char(8), UF char(2))
+	BEGIN
+		UPDATE tblCliente 
+        SET nm_cliente = nome, no_CPF = cpf, email = emailCli, no_telefone = telefone, dt_nascimento = nascimento, nm_logradouro = nomeLogradouro, no_logradouro = NumLogradouro, nm_cidade = cidade, nm_bairro = bairro, no_CEP = CEP, sg_UF = UF
+        WHERE cd_cliente = id;
+	END
+$$ DELIMITER ;
+
 
 select * from TblCliente;
 select * from TblFuncionario;

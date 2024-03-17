@@ -74,7 +74,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::MercuryProject.Properties.Resources.Linha_Divisoo;
+            this.pictureBox3.Image = MercuryProject.Properties.Resources.Linha_Divisoo;
             this.pictureBox3.Location = new System.Drawing.Point(79, 273);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox3.Name = "pictureBox3";
