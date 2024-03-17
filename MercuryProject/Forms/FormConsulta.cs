@@ -78,10 +78,5 @@ namespace MercuryProject.Forms
             }
             dgvDados.DataSource = DAO.Select_Data_Table(arrayTables[indexComboBox]);
         }
-
-        private void dgvDados_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            Console.WriteLine("2");
-        }
     }
 }

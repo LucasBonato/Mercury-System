@@ -85,7 +85,6 @@
             this.dgvDados.Size = new System.Drawing.Size(871, 418);
             this.dgvDados.TabIndex = 8;
             this.dgvDados.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvDados_RowHeaderMouseClick);
-            this.dgvDados.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvDados_RowHeaderMouseDoubleClick);
             // 
             // btnConsultar
             // 

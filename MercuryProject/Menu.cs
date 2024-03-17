@@ -11,9 +11,9 @@ namespace MercuryProject
 {
     public partial class Menu : Form
     {
-        Button btnAtual;
-        Form formAtual;
-        List<Button> buttons = new List<Button>();
+        private Button btnAtual;
+        private Form formAtual;
+        public List<Button> buttons = new List<Button>();
         public Menu()
         {
             InitializeComponent();
@@ -38,7 +38,7 @@ namespace MercuryProject
         {
             AbrirNovoPanel(new FormFuncionario(), sender);
         }
-        private void btnVeículos_Click(object sender, EventArgs e)
+        private void btnVeiculos_Click(object sender, EventArgs e)
         {
             AbrirNovoPanel(new FormVeiculos(), sender);
         }
@@ -46,7 +46,7 @@ namespace MercuryProject
         {
             AbrirNovoPanel(new FormConsulta(), sender);
         }
-        private void AbrirNovoPanel(Form novoForm, object sender)
+        public void AbrirNovoPanel(Form novoForm, object sender)
         {
             if (formAtual != null)
             {
@@ -119,11 +119,11 @@ namespace MercuryProject
         }
         private void AddButtons()
         {
+            buttons.Add(btnCliente);
+            buttons.Add(btnFuncionario);
+            buttons.Add(btnVeículos);
             buttons.Add(btnInicio);
             buttons.Add(btnConsulta);
-            buttons.Add(btnFuncionario);
-            buttons.Add(btnCliente);
-            buttons.Add(btnVeículos);
         }
 
         private void ChangeMode(object sender, EventArgs e)

@@ -104,7 +104,7 @@
             this.btnVeículos.TabIndex = 4;
             this.btnVeículos.Text = "Veículos";
             this.btnVeículos.UseVisualStyleBackColor = false;
-            this.btnVeículos.Click += new System.EventHandler(this.btnVeículos_Click);
+            this.btnVeículos.Click += new System.EventHandler(this.btnVeiculos_Click);
             // 
             // btnFuncionario
             // 
